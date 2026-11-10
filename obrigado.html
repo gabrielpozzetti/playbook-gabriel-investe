@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Último passo: receba o playbook | Gabriel Investe</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+<!-- Meta Pixel -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1774270406969223');
+fbq('track', 'PageView');
+</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'DM Sans',Arial,sans-serif;background:#0A1628;color:#F5F0E8;min-height:100vh;display:grid;place-items:center;padding:24px;line-height:1.55}
+.box{max-width:560px;width:100%;text-align:center}
+.step{display:inline-block;font-size:13px;letter-spacing:.16em;font-weight:700;color:#C9A96E;text-transform:uppercase;margin-bottom:14px}
+h1{font-family:'Playfair Display',Georgia,serif;font-weight:600;font-size:clamp(30px,6vw,42px);line-height:1.12;margin-bottom:14px}
+p{color:#E4DCCB;font-size:17px;margin-bottom:26px}
+.wa{display:inline-flex;align-items:center;justify-content:center;gap:10px;width:100%;padding:18px 20px;border-radius:12px;background:#25D366;color:#fff;font-weight:700;font-size:17px;text-decoration:none;box-shadow:0 8px 24px rgba(37,211,102,.35)}
+.wa svg{flex:0 0 22px}
+.note{font-size:14px;color:#B8B2A6;margin-top:18px}
+.progress{height:6px;border-radius:3px;background:#13233D;margin:0 auto 28px;max-width:320px;overflow:hidden}
+.progress i{display:block;height:100%;width:90%;background:#C9A96E}
+</style>
+</head>
+<body>
+<div class="box">
+  <div class="progress"><i></i></div>
+  <span class="step">Último passo</span>
+  <h1 id="title">Seu playbook está pronto.</h1>
+  <p>Toque no botão abaixo para receber o material no seu WhatsApp. A mensagem já vai preenchida, é só enviar.</p>
+  <a class="wa" id="wa" href="https://wa.me/5541998817220" target="_blank" rel="noopener">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37A9.86 9.86 0 0 1 2.16 12c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88M20.46 3.49A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89 0-3.18-1.24-6.17-3.48-8.42"/></svg>
+    RECEBER NO WHATSAPP
+  </a>
+  <p class="note">Se o WhatsApp não abrir, mande "PLAYBOOK" para +55 41 99881-7220.</p>
+</div>
+<script>
+var n=new URLSearchParams(location.search).get("n");
+var nome=n?n.replace(/[^\p{L}\s'-]/gu,"").slice(0,40):"";
+if(nome){document.getElementById("title").textContent=nome+", seu playbook está pronto.";}
+var msg="Olá, Gabriel! "+(nome?"Aqui é "+nome+". ":"")+"Me cadastrei na página e quero receber o PLAYBOOK do Investidor.";
+var wa=document.getElementById("wa");
+wa.href="https://wa.me/5541998817220?text="+encodeURIComponent(msg);
+wa.addEventListener("click",function(){try{fbq("track","Contact",{content_name:"playbook"})}catch(e){}});
+</script>
+</body>
+</html>

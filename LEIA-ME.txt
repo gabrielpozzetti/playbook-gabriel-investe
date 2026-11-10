@@ -1,0 +1,18 @@
+PÁGINA DO PLAYBOOK — COMO PUBLICAR (5 minutos)
+
+1. No GitHub, crie um repositório novo chamado: playbook-gabriel-investe
+2. "Add files via upload": arraste TODO o conteúdo desta pasta
+   (index.html, obrigado.html, vercel.json, pasta playbook, pasta material).
+3. Na Vercel: Add New > Project > importe o repositório playbook-gabriel-investe.
+   Framework Preset: "Other". Não precisa de build. Clique em Deploy.
+4. Copie o endereço que a Vercel gerar (ex.: playbook-gabriel-investe.vercel.app)
+   e me mande. Com ele eu crio o 6º anúncio e ligo as ferramentas à página.
+
+PÁGINAS
+/            → página de cadastro (grava o lead no mesmo Supabase das ferramentas,
+               ferramenta = "playbook", e dispara o evento Lead do pixel)
+/obrigado    → último passo: botão que abre o WhatsApp com a mensagem pronta
+/playbook    → versão web do playbook (link para enviar no WhatsApp)
+/material/playbook-gabriel-investe.pdf → o PDF
+/anuncio/card-01.png ... card-07.png → imagens do 6º anúncio (carrossel). Precisam estar
+               públicas para eu enviá-las ao Meta; não aparecem em nenhuma página.
